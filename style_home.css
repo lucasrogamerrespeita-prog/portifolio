@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #000000;
+    /* Bege livraria */
+    color: #c217d8; /* deixa tudo no body com fonte georgia e o fundo preto*/
+}
+
+/* Header */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111111;
+    padding: 20px 10vw;
+    box-shadow: 0 2px 8px rgba(100, 80, 60, 0.07); /* alinha e deixa as coisa bunita*/
+}
+
+.custom-header h1 {
+    font-size: 2.3rem;
+    margin: 0;
+    font-family: 'Merriweather', Georgia, serif;
+    color: #8911a1;
+    letter-spacing: 1px; /* deixa meu nome com cor roxa e uma fonte diferente*/
+}
+
+.header-photos {
+    display: flex;
+    gap: 16px; /*ajustes pequenos*/
+}
+
+.header-photos a {
+    display: inline-block;
+    border-radius: 50%; /*deixa as fotos redondas*/
+}
+
+.header-photos img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #111111;
+    background: #111111;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.21s;
+}
+
+.header-photos a:hover img,
+.header-photos a:focus img {
+    transform: scale(1.13);
+    box-shadow: 0 4px 24px rgba(177, 141, 79, 0.18);
+    border-color: #111111;
+}
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 700px;
+    margin: 64px auto 0 auto;
+    background-color: #111111;
+    padding: 40px 32px;
+    border-radius: 20px;
+    box-shadow: 0 2px 24px rgba(148, 110, 56, 0.09);
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+.main-text {
+    font-size: 1.07rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.poemas-page {
+    display: inline-block;
+    background: #01113d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(105, 84, 60, 0.03);
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.poemas-page:hover {
+    background: #001f74;
+    color: #d3d3d3;
+}
